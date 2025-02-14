@@ -9,6 +9,7 @@ entity Cars : cuid, managed {
     make : String;
     model: String;
     year : Integer;
+    motor: String;
     price: Price
 }
 
