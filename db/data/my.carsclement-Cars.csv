@@ -1,3 +1,2 @@
-ID,make,model,year,price_amount,price_currency,createdAt,createdBy,modifiedAt,modifiedBy
-1,Tesla,S,2020,35000,EUR,,,,
-
+ID,make,model,year,motor,price_amount,price_currency,buyer_ID,createdAt,createdBy,modifiedAt,modifiedBy
+1,Tesla,S,2020,V8,35000,EUR,1,,,,

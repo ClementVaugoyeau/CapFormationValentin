@@ -10,12 +10,21 @@ entity Cars : cuid, managed {
     model: String;
     year : Integer;
     motor: String;
-    price: Price
+    price: Price;
+    buyer : Association to Customers
 }
 
 type Price : {
     amount: Integer;
     currency: String
+}
+
+entity Customers: cuid, managed {
+    firstName: String;
+    lastName: String;
+    email: String;
+    phone: String;
+    cars :  Association to many Cars on cars.buyer = $self
 }
 
 
